@@ -1,0 +1,966 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28AE59B429BC40B400D7BE5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE59B329BC40B400D7BE5C /* AppDelegate.swift */; };
+		28AE59B629BC40B400D7BE5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE59B529BC40B400D7BE5C /* SceneDelegate.swift */; };
+		28AE59B929BC40B400D7BE5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28AE59B729BC40B400D7BE5C /* LaunchScreen.storyboard */; };
+		28AE59BC29BC40B400D7BE5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28AE59BA29BC40B400D7BE5C /* Main.storyboard */; };
+		28AE59C529BC40B400D7BE5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE59C429BC40B400D7BE5C /* AppDelegate.swift */; };
+		28AE59C829BC40B400D7BE5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28AE59C629BC40B400D7BE5C /* Main.storyboard */; };
+		28AE59CF29BC40B400D7BE5C /* LeetCode HTML Extractor Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 28AE59CE29BC40B400D7BE5C /* LeetCode HTML Extractor Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		28AE59D929BC40B400D7BE5C /* LeetCode HTML Extractor Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 28AE59D829BC40B400D7BE5C /* LeetCode HTML Extractor Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		28AE59DF29BC40B400D7BE5C /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 28AE599A29BC40B300D7BE5C /* Main.html */; };
+		28AE59E029BC40B400D7BE5C /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 28AE599A29BC40B300D7BE5C /* Main.html */; };
+		28AE59E129BC40B400D7BE5C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AE599C29BC40B300D7BE5C /* Icon.png */; };
+		28AE59E229BC40B400D7BE5C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AE599C29BC40B300D7BE5C /* Icon.png */; };
+		28AE59E329BC40B400D7BE5C /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 28AE599D29BC40B300D7BE5C /* Style.css */; };
+		28AE59E429BC40B400D7BE5C /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 28AE599D29BC40B300D7BE5C /* Style.css */; };
+		28AE59E529BC40B400D7BE5C /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 28AE599E29BC40B300D7BE5C /* Script.js */; };
+		28AE59E629BC40B400D7BE5C /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 28AE599E29BC40B300D7BE5C /* Script.js */; };
+		28AE59E729BC40B400D7BE5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE599F29BC40B300D7BE5C /* ViewController.swift */; };
+		28AE59E829BC40B400D7BE5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE599F29BC40B300D7BE5C /* ViewController.swift */; };
+		28AE59E929BC40B400D7BE5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28AE59A029BC40B400D7BE5C /* Assets.xcassets */; };
+		28AE59EA29BC40B400D7BE5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28AE59A029BC40B400D7BE5C /* Assets.xcassets */; };
+		28AE59EB29BC40B400D7BE5C /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE59A229BC40B400D7BE5C /* SafariWebExtensionHandler.swift */; };
+		28AE59EC29BC40B400D7BE5C /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE59A229BC40B400D7BE5C /* SafariWebExtensionHandler.swift */; };
+		28AE59ED29BC40B400D7BE5C /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 28AE59A429BC40B400D7BE5C /* _locales */; };
+		28AE59EE29BC40B400D7BE5C /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 28AE59A429BC40B400D7BE5C /* _locales */; };
+		28AE59EF29BC40B400D7BE5C /* images in Resources */ = {isa = PBXBuildFile; fileRef = 28AE59A529BC40B400D7BE5C /* images */; };
+		28AE59F029BC40B400D7BE5C /* images in Resources */ = {isa = PBXBuildFile; fileRef = 28AE59A529BC40B400D7BE5C /* images */; };
+		28AE59F129BC40B400D7BE5C /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 28AE59A629BC40B400D7BE5C /* manifest.json */; };
+		28AE59F229BC40B400D7BE5C /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 28AE59A629BC40B400D7BE5C /* manifest.json */; };
+		28AE59F329BC40B400D7BE5C /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 28AE59A729BC40B400D7BE5C /* background.js */; };
+		28AE59F429BC40B400D7BE5C /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 28AE59A729BC40B400D7BE5C /* background.js */; };
+		28AE59F529BC40B400D7BE5C /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 28AE59A829BC40B400D7BE5C /* content.js */; };
+		28AE59F629BC40B400D7BE5C /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 28AE59A829BC40B400D7BE5C /* content.js */; };
+		28AE59F729BC40B400D7BE5C /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 28AE59A929BC40B400D7BE5C /* popup.html */; };
+		28AE59F829BC40B400D7BE5C /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 28AE59A929BC40B400D7BE5C /* popup.html */; };
+		28AE59F929BC40B400D7BE5C /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 28AE59AA29BC40B400D7BE5C /* popup.css */; };
+		28AE59FA29BC40B400D7BE5C /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 28AE59AA29BC40B400D7BE5C /* popup.css */; };
+		28AE59FB29BC40B400D7BE5C /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 28AE59AB29BC40B400D7BE5C /* popup.js */; };
+		28AE59FC29BC40B400D7BE5C /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 28AE59AB29BC40B400D7BE5C /* popup.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28AE59D029BC40B400D7BE5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28AE599429BC40B300D7BE5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28AE59CD29BC40B400D7BE5C;
+			remoteInfo = "LeetCode HTML Extractor Extension (iOS)";
+		};
+		28AE59DA29BC40B400D7BE5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28AE599429BC40B300D7BE5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28AE59D729BC40B400D7BE5C;
+			remoteInfo = "LeetCode HTML Extractor Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		28AE5A0229BC40B400D7BE5C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				28AE59CF29BC40B400D7BE5C /* LeetCode HTML Extractor Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28AE5A0929BC40B400D7BE5C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				28AE59D929BC40B400D7BE5C /* LeetCode HTML Extractor Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		28AE599B29BC40B300D7BE5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		28AE599C29BC40B300D7BE5C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		28AE599D29BC40B300D7BE5C /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		28AE599E29BC40B300D7BE5C /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		28AE599F29BC40B300D7BE5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28AE59A029BC40B400D7BE5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28AE59A229BC40B400D7BE5C /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		28AE59A429BC40B400D7BE5C /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		28AE59A529BC40B400D7BE5C /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		28AE59A629BC40B400D7BE5C /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		28AE59A729BC40B400D7BE5C /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		28AE59A829BC40B400D7BE5C /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		28AE59A929BC40B400D7BE5C /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		28AE59AA29BC40B400D7BE5C /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		28AE59AB29BC40B400D7BE5C /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		28AE59B029BC40B400D7BE5C /* LeetCode HTML Extractor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LeetCode HTML Extractor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28AE59B329BC40B400D7BE5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28AE59B529BC40B400D7BE5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		28AE59B829BC40B400D7BE5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28AE59BB29BC40B400D7BE5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28AE59BD29BC40B400D7BE5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28AE59C229BC40B400D7BE5C /* LeetCode HTML Extractor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LeetCode HTML Extractor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28AE59C429BC40B400D7BE5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28AE59C729BC40B400D7BE5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28AE59C929BC40B400D7BE5C /* LeetCode HTML Extractor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LeetCode HTML Extractor.entitlements"; sourceTree = "<group>"; };
+		28AE59CE29BC40B400D7BE5C /* LeetCode HTML Extractor Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LeetCode HTML Extractor Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28AE59D329BC40B400D7BE5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28AE59D829BC40B400D7BE5C /* LeetCode HTML Extractor Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LeetCode HTML Extractor Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28AE59DD29BC40B400D7BE5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28AE59DE29BC40B400D7BE5C /* LeetCode HTML Extractor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LeetCode HTML Extractor.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28AE59AD29BC40B400D7BE5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28AE59BF29BC40B400D7BE5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28AE59CB29BC40B400D7BE5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28AE59D529BC40B400D7BE5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28AE599329BC40B300D7BE5C = {
+			isa = PBXGroup;
+			children = (
+				28AE599829BC40B300D7BE5C /* Shared (App) */,
+				28AE59A129BC40B400D7BE5C /* Shared (Extension) */,
+				28AE59B229BC40B400D7BE5C /* iOS (App) */,
+				28AE59C329BC40B400D7BE5C /* macOS (App) */,
+				28AE59D229BC40B400D7BE5C /* iOS (Extension) */,
+				28AE59DC29BC40B400D7BE5C /* macOS (Extension) */,
+				28AE59B129BC40B400D7BE5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28AE599829BC40B300D7BE5C /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				28AE599F29BC40B300D7BE5C /* ViewController.swift */,
+				28AE59A029BC40B400D7BE5C /* Assets.xcassets */,
+				28AE599929BC40B300D7BE5C /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		28AE599929BC40B300D7BE5C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28AE599A29BC40B300D7BE5C /* Main.html */,
+				28AE599C29BC40B300D7BE5C /* Icon.png */,
+				28AE599D29BC40B300D7BE5C /* Style.css */,
+				28AE599E29BC40B300D7BE5C /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		28AE59A129BC40B400D7BE5C /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				28AE59A229BC40B400D7BE5C /* SafariWebExtensionHandler.swift */,
+				28AE59A329BC40B400D7BE5C /* Resources */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		28AE59A329BC40B400D7BE5C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28AE59A429BC40B400D7BE5C /* _locales */,
+				28AE59A529BC40B400D7BE5C /* images */,
+				28AE59A629BC40B400D7BE5C /* manifest.json */,
+				28AE59A729BC40B400D7BE5C /* background.js */,
+				28AE59A829BC40B400D7BE5C /* content.js */,
+				28AE59A929BC40B400D7BE5C /* popup.html */,
+				28AE59AA29BC40B400D7BE5C /* popup.css */,
+				28AE59AB29BC40B400D7BE5C /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		28AE59B129BC40B400D7BE5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28AE59B029BC40B400D7BE5C /* LeetCode HTML Extractor.app */,
+				28AE59C229BC40B400D7BE5C /* LeetCode HTML Extractor.app */,
+				28AE59CE29BC40B400D7BE5C /* LeetCode HTML Extractor Extension.appex */,
+				28AE59D829BC40B400D7BE5C /* LeetCode HTML Extractor Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28AE59B229BC40B400D7BE5C /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				28AE59B329BC40B400D7BE5C /* AppDelegate.swift */,
+				28AE59B529BC40B400D7BE5C /* SceneDelegate.swift */,
+				28AE59B729BC40B400D7BE5C /* LaunchScreen.storyboard */,
+				28AE59BA29BC40B400D7BE5C /* Main.storyboard */,
+				28AE59BD29BC40B400D7BE5C /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		28AE59C329BC40B400D7BE5C /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				28AE59C429BC40B400D7BE5C /* AppDelegate.swift */,
+				28AE59C629BC40B400D7BE5C /* Main.storyboard */,
+				28AE59C929BC40B400D7BE5C /* LeetCode HTML Extractor.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		28AE59D229BC40B400D7BE5C /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				28AE59D329BC40B400D7BE5C /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		28AE59DC29BC40B400D7BE5C /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				28AE59DD29BC40B400D7BE5C /* Info.plist */,
+				28AE59DE29BC40B400D7BE5C /* LeetCode HTML Extractor.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28AE59AF29BC40B400D7BE5C /* LeetCode HTML Extractor (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28AE5A0329BC40B400D7BE5C /* Build configuration list for PBXNativeTarget "LeetCode HTML Extractor (iOS)" */;
+			buildPhases = (
+				28AE59AC29BC40B400D7BE5C /* Sources */,
+				28AE59AD29BC40B400D7BE5C /* Frameworks */,
+				28AE59AE29BC40B400D7BE5C /* Resources */,
+				28AE5A0229BC40B400D7BE5C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28AE59D129BC40B400D7BE5C /* PBXTargetDependency */,
+			);
+			name = "LeetCode HTML Extractor (iOS)";
+			productName = "LeetCode HTML Extractor (iOS)";
+			productReference = 28AE59B029BC40B400D7BE5C /* LeetCode HTML Extractor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28AE59C129BC40B400D7BE5C /* LeetCode HTML Extractor (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28AE5A0A29BC40B400D7BE5C /* Build configuration list for PBXNativeTarget "LeetCode HTML Extractor (macOS)" */;
+			buildPhases = (
+				28AE59BE29BC40B400D7BE5C /* Sources */,
+				28AE59BF29BC40B400D7BE5C /* Frameworks */,
+				28AE59C029BC40B400D7BE5C /* Resources */,
+				28AE5A0929BC40B400D7BE5C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28AE59DB29BC40B400D7BE5C /* PBXTargetDependency */,
+			);
+			name = "LeetCode HTML Extractor (macOS)";
+			productName = "LeetCode HTML Extractor (macOS)";
+			productReference = 28AE59C229BC40B400D7BE5C /* LeetCode HTML Extractor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28AE59CD29BC40B400D7BE5C /* LeetCode HTML Extractor Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28AE59FF29BC40B400D7BE5C /* Build configuration list for PBXNativeTarget "LeetCode HTML Extractor Extension (iOS)" */;
+			buildPhases = (
+				28AE59CA29BC40B400D7BE5C /* Sources */,
+				28AE59CB29BC40B400D7BE5C /* Frameworks */,
+				28AE59CC29BC40B400D7BE5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LeetCode HTML Extractor Extension (iOS)";
+			productName = "LeetCode HTML Extractor Extension (iOS)";
+			productReference = 28AE59CE29BC40B400D7BE5C /* LeetCode HTML Extractor Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		28AE59D729BC40B400D7BE5C /* LeetCode HTML Extractor Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28AE5A0629BC40B400D7BE5C /* Build configuration list for PBXNativeTarget "LeetCode HTML Extractor Extension (macOS)" */;
+			buildPhases = (
+				28AE59D429BC40B400D7BE5C /* Sources */,
+				28AE59D529BC40B400D7BE5C /* Frameworks */,
+				28AE59D629BC40B400D7BE5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LeetCode HTML Extractor Extension (macOS)";
+			productName = "LeetCode HTML Extractor Extension (macOS)";
+			productReference = 28AE59D829BC40B400D7BE5C /* LeetCode HTML Extractor Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28AE599429BC40B300D7BE5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					28AE59AF29BC40B400D7BE5C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					28AE59C129BC40B400D7BE5C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					28AE59CD29BC40B400D7BE5C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					28AE59D729BC40B400D7BE5C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 28AE599729BC40B300D7BE5C /* Build configuration list for PBXProject "LeetCode HTML Extractor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28AE599329BC40B300D7BE5C;
+			productRefGroup = 28AE59B129BC40B400D7BE5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28AE59AF29BC40B400D7BE5C /* LeetCode HTML Extractor (iOS) */,
+				28AE59C129BC40B400D7BE5C /* LeetCode HTML Extractor (macOS) */,
+				28AE59CD29BC40B400D7BE5C /* LeetCode HTML Extractor Extension (iOS) */,
+				28AE59D729BC40B400D7BE5C /* LeetCode HTML Extractor Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28AE59AE29BC40B400D7BE5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AE59E129BC40B400D7BE5C /* Icon.png in Resources */,
+				28AE59B929BC40B400D7BE5C /* LaunchScreen.storyboard in Resources */,
+				28AE59DF29BC40B400D7BE5C /* Main.html in Resources */,
+				28AE59E529BC40B400D7BE5C /* Script.js in Resources */,
+				28AE59E929BC40B400D7BE5C /* Assets.xcassets in Resources */,
+				28AE59BC29BC40B400D7BE5C /* Main.storyboard in Resources */,
+				28AE59E329BC40B400D7BE5C /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28AE59C029BC40B400D7BE5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AE59E229BC40B400D7BE5C /* Icon.png in Resources */,
+				28AE59E429BC40B400D7BE5C /* Style.css in Resources */,
+				28AE59C829BC40B400D7BE5C /* Main.storyboard in Resources */,
+				28AE59E629BC40B400D7BE5C /* Script.js in Resources */,
+				28AE59EA29BC40B400D7BE5C /* Assets.xcassets in Resources */,
+				28AE59E029BC40B400D7BE5C /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28AE59CC29BC40B400D7BE5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AE59F329BC40B400D7BE5C /* background.js in Resources */,
+				28AE59F929BC40B400D7BE5C /* popup.css in Resources */,
+				28AE59F729BC40B400D7BE5C /* popup.html in Resources */,
+				28AE59EF29BC40B400D7BE5C /* images in Resources */,
+				28AE59F129BC40B400D7BE5C /* manifest.json in Resources */,
+				28AE59ED29BC40B400D7BE5C /* _locales in Resources */,
+				28AE59F529BC40B400D7BE5C /* content.js in Resources */,
+				28AE59FB29BC40B400D7BE5C /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28AE59D629BC40B400D7BE5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AE59F429BC40B400D7BE5C /* background.js in Resources */,
+				28AE59FA29BC40B400D7BE5C /* popup.css in Resources */,
+				28AE59F829BC40B400D7BE5C /* popup.html in Resources */,
+				28AE59F029BC40B400D7BE5C /* images in Resources */,
+				28AE59F229BC40B400D7BE5C /* manifest.json in Resources */,
+				28AE59EE29BC40B400D7BE5C /* _locales in Resources */,
+				28AE59F629BC40B400D7BE5C /* content.js in Resources */,
+				28AE59FC29BC40B400D7BE5C /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28AE59AC29BC40B400D7BE5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AE59E729BC40B400D7BE5C /* ViewController.swift in Sources */,
+				28AE59B429BC40B400D7BE5C /* AppDelegate.swift in Sources */,
+				28AE59B629BC40B400D7BE5C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28AE59BE29BC40B400D7BE5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AE59E829BC40B400D7BE5C /* ViewController.swift in Sources */,
+				28AE59C529BC40B400D7BE5C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28AE59CA29BC40B400D7BE5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AE59EB29BC40B400D7BE5C /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28AE59D429BC40B400D7BE5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AE59EC29BC40B400D7BE5C /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28AE59D129BC40B400D7BE5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28AE59CD29BC40B400D7BE5C /* LeetCode HTML Extractor Extension (iOS) */;
+			targetProxy = 28AE59D029BC40B400D7BE5C /* PBXContainerItemProxy */;
+		};
+		28AE59DB29BC40B400D7BE5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28AE59D729BC40B400D7BE5C /* LeetCode HTML Extractor Extension (macOS) */;
+			targetProxy = 28AE59DA29BC40B400D7BE5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28AE599A29BC40B300D7BE5C /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28AE599B29BC40B300D7BE5C /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		28AE59B729BC40B400D7BE5C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28AE59B829BC40B400D7BE5C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		28AE59BA29BC40B400D7BE5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28AE59BB29BC40B400D7BE5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28AE59C629BC40B400D7BE5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28AE59C729BC40B400D7BE5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28AE59FD29BC40B400D7BE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28AE59FE29BC40B400D7BE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		28AE5A0029BC40B400D7BE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 886S77F86S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LeetCode HTML Extractor Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diegojmz.LeetCode-HTML-Extractor.Extension";
+				PRODUCT_NAME = "LeetCode HTML Extractor Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28AE5A0129BC40B400D7BE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 886S77F86S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LeetCode HTML Extractor Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diegojmz.LeetCode-HTML-Extractor.Extension";
+				PRODUCT_NAME = "LeetCode HTML Extractor Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28AE5A0429BC40B400D7BE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 886S77F86S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LeetCode HTML Extractor";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diegojmz.LeetCode-HTML-Extractor";
+				PRODUCT_NAME = "LeetCode HTML Extractor";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28AE5A0529BC40B400D7BE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 886S77F86S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LeetCode HTML Extractor";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diegojmz.LeetCode-HTML-Extractor";
+				PRODUCT_NAME = "LeetCode HTML Extractor";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28AE5A0729BC40B400D7BE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/LeetCode HTML Extractor.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 886S77F86S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LeetCode HTML Extractor Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diegojmz.LeetCode-HTML-Extractor.Extension";
+				PRODUCT_NAME = "LeetCode HTML Extractor Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		28AE5A0829BC40B400D7BE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/LeetCode HTML Extractor.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 886S77F86S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LeetCode HTML Extractor Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diegojmz.LeetCode-HTML-Extractor.Extension";
+				PRODUCT_NAME = "LeetCode HTML Extractor Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		28AE5A0B29BC40B400D7BE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/LeetCode HTML Extractor.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 886S77F86S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "LeetCode HTML Extractor";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diegojmz.LeetCode-HTML-Extractor";
+				PRODUCT_NAME = "LeetCode HTML Extractor";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		28AE5A0C29BC40B400D7BE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/LeetCode HTML Extractor.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 886S77F86S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "LeetCode HTML Extractor";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diegojmz.LeetCode-HTML-Extractor";
+				PRODUCT_NAME = "LeetCode HTML Extractor";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28AE599729BC40B300D7BE5C /* Build configuration list for PBXProject "LeetCode HTML Extractor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28AE59FD29BC40B400D7BE5C /* Debug */,
+				28AE59FE29BC40B400D7BE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28AE59FF29BC40B400D7BE5C /* Build configuration list for PBXNativeTarget "LeetCode HTML Extractor Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28AE5A0029BC40B400D7BE5C /* Debug */,
+				28AE5A0129BC40B400D7BE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28AE5A0329BC40B400D7BE5C /* Build configuration list for PBXNativeTarget "LeetCode HTML Extractor (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28AE5A0429BC40B400D7BE5C /* Debug */,
+				28AE5A0529BC40B400D7BE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28AE5A0629BC40B400D7BE5C /* Build configuration list for PBXNativeTarget "LeetCode HTML Extractor Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28AE5A0729BC40B400D7BE5C /* Debug */,
+				28AE5A0829BC40B400D7BE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28AE5A0A29BC40B400D7BE5C /* Build configuration list for PBXNativeTarget "LeetCode HTML Extractor (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28AE5A0B29BC40B400D7BE5C /* Debug */,
+				28AE5A0C29BC40B400D7BE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28AE599429BC40B300D7BE5C /* Project object */;
+}
