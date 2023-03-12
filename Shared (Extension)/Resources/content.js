@@ -3,8 +3,11 @@ browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
         var title_class = "mr-2 text-lg font-medium text-label-1 dark:text-dark-label-1"
         var title_text = document.getElementsByClassName(title_class)[0].innerText;
         var title = title_text.substring(title_text.indexOf(' ') + 1);
+        var difficulty_class = "inline-block rounded-[21px] bg-opacity-[.15] px-2.5 py-1 text-xs font-medium capitalize dark:bg-opacity-[.15]"
+        var difficulty_data = document.getElementsByClassName(difficulty_class)[0].innerHTML;
+        var meta_data = "---\nurl: " + window.location.href + "\ndifficulty: " + difficulty_data + " \n---\n";
         var data = document.getElementsByClassName("_1l1MA")[0].innerHTML;
-        download(data + "\n---\n", title, "text/markdown");
+        download(meta_data + data + "\n---\n\n", title, "text/markdown");
     }
 });
 
