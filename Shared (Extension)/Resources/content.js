@@ -1,7 +1,27 @@
-browser.runtime.sendMessage({ greeting: "hello" }).then((response) => {
-    console.log("Received response: ", response);
+browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
+    if (request.message === "start") {
+        var title_class = "mr-2 text-lg font-medium text-label-1 dark:text-dark-label-1"
+        var title_text = document.getElementsByClassName(title_class)[0].innerText;
+        var title = title_text.substring(title_text.indexOf(' ') + 1);
+        var data = document.getElementsByClassName("_1l1MA")[0].innerHTML;
+        download(data + "\n---\n", title, "text/markdown");
+    }
 });
 
-browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    console.log("Received request: ", request);
-});
+function download(data, filename, type) {
+    var file = new Blob([data], {type: type});
+    if (window.navigator.msSaveOrOpenBlob) // IE10+
+        window.navigator.msSaveOrOpenBlob(file, filename);
+    else { // Others
+        var a = document.createElement("a"),
+                url = URL.createObjectURL(file);
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(function() {
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }, 0);
+    }
+}
